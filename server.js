@@ -8,7 +8,7 @@ const server = http.createServer(app);
 // Socket.io
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:8080", "https://admin.socket.io"],
+    origin: ["https://catdemo.onrender.com","http://localhost:8080", "https://admin.socket.io"],
     methods: ["GET", "POST"],
     credentials: true,
   },
