@@ -18,6 +18,16 @@ instrument(io, {
   auth: false,
 });
 
+// Instrument Socket.IO
+// const instrumenter = instrument(server, {
+//   auth: {
+//       type: "basic",
+//       username: "admin",
+//       password: "admin@123"
+//   }
+// });
+
+
 io.on("connection", (socket) => {
   console.log(`A user connected ${socket.id}`);
   //Send Message
